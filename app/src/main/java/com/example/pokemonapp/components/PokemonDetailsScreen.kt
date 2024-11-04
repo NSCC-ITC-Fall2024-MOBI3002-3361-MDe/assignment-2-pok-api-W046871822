@@ -23,6 +23,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -56,7 +57,7 @@ fun PokeAPIApp(navController: NavHostController = rememberNavController()) {
 
 @Composable
 fun PokemonDetailsScreen(
-    navController: NavHostController,
+    navController: NavController,
     name: String
 ) {
     val viewModel = PokemonDetailsViewModel()
